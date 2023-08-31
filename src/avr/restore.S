@@ -36,6 +36,7 @@ INT0_vect:
     rjmp mainBegin
 
 noRestoreSelect:
+  rjmp restoreBoot
   ; remember led status
   push rLed
   
