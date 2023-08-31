@@ -20,8 +20,8 @@
 .text
 cmdSetDefault:
   ; get argument
-  waitOe
-  in rTmp,ADDR_PIN
+  waitOe rTmp
+  ; in rTmp,ADDR_PIN
   andi rTmp,ADDR_MASK
 
   ; z to eeDefaultSlot
