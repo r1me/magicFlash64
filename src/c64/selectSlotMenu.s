@@ -544,6 +544,9 @@ keyReturn:
     jmp :++
 :
   lda selectedSlot
+  sta defaultSlot
+  jsr _mf64SetDefault 
+  lda selectedSlot 
 :
   jsr _mf64Select
 
